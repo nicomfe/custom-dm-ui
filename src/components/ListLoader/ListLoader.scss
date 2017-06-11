@@ -1,0 +1,125 @@
+.timelineItem {
+  padding: 12px 12px 12px 100px;
+  margin: 0 auto;
+  max-width: 472px;
+}
+
+@keyframes placeHolderShimmer{
+    0%{
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
+
+.animatedbackground {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 800px 104px;
+    height: 30px;
+    position: relative;
+}
+
+.backgroundMasker {
+    background: #fff;
+    position: absolute;
+}
+
+/* Every thing below this is just positioning */
+
+.backgroundMasker.headerTop,
+.backgroundMasker.headerBottom,
+.backgroundMasker.subheader-bottom {
+    top: 0;
+    left: 0px;
+    right: 0;
+    height: 10px;
+}
+
+.backgroundMasker.headerLeft,
+.backgroundMasker.subheaderLeft,
+.backgroundMasker.headerRight,
+.backgroundMasker.subheaderRight {
+    top: 10px;
+    left: 40px;
+    height: 8px;
+    width: 10px;
+}
+
+.backgroundMasker.headerBottom {
+    top: 18px;
+    height: 6px;
+}
+
+.backgroundMasker.subheaderLeft,
+.backgroundMasker.subheaderRight {
+    top: 24px;
+    height: 6px;
+}
+
+
+.backgroundMasker.headerRight,
+.backgroundMasker.subheaderRight {
+    width: auto;
+    left: 300px;
+    right: 0;
+}
+
+.backgroundMasker.subheaderRight {
+    left: 230px;
+}
+
+.backgroundMasker.subheader-bottom {
+    top: 30px;
+    height: 10px;
+}
+
+.backgroundMasker.headerTop,
+.backgroundMasker.content-second-line,
+.backgroundMasker.content-third-line,
+.backgroundMasker.content-second-end,
+.backgroundMasker.content-third-end,
+.backgroundMasker.content-first-end {
+    top: 40px;
+    left: 0;
+    right: 0;
+    height: 6px;
+}
+
+.backgroundMasker.headerTop {
+    height:20px;
+}
+
+.backgroundMasker.content-first-end,
+.backgroundMasker.content-second-end,
+.backgroundMasker.content-third-end{
+    width: auto;
+    left: 380px;
+    right: 0;
+    top: 60px;
+    height: 8px;
+}
+
+.backgroundMasker.content-second-line  {
+    top: 68px;
+}
+
+.backgroundMasker.content-second-end {
+    left: 420px;
+    top: 74px;
+}
+
+.backgroundMasker.content-third-line {
+    top: 82px;
+}
+
+.backgroundMasker.content-third-end {
+    left: 300px;
+    top: 88px;
+}
